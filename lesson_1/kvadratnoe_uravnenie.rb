@@ -14,15 +14,15 @@
 #   вернет 4, т.е. квадратный корень из 16.
 
 puts "Vvedite koefficient A."
-a = gets.chomp.to_i
+a = gets.chomp.to_f
 puts "Vvedite koefficient B."
-b = gets.chomp.to_i
+b = gets.chomp.to_f
 puts "Vvedite koefficient C."
-c = gets.chomp.to_i
+c = gets.chomp.to_f
 
-d=b**2 - 4.0*a*c
+d = b ** 2 - 4.0 * a * c
 puts "D = #{d}."
-
+kor = Math.sqrt(d)
 if d < 0
     puts "Korney net."
 
@@ -30,7 +30,7 @@ elsif d == 0
     x = -b / 2.0 * a
     puts "Koren uravnenia raven #{x}."
 else 
-    x = (-b + Math.sqrt(d)) / (2.0 * a)
-    y = (-b - Math.sqrt(d)) / (2.0 * a) 
+    x = (-b + kor) / (2.0 * a)
+    y = (-b - kor) / (2.0 * a) 
     puts "V uravnenii dva kornya: #{x} i #{y}."
 end
