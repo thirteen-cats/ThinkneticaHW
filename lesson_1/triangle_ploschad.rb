@@ -8,5 +8,5 @@ a = gets.chomp.to_i
 puts "Kakova vysota treugolnika?"
 h = gets.chomp.to_i
 
-s= (a * h) / 2
+s = (a * h) / 2
 puts "Ploschad dannogo treugolnika ravna #{s} kvadratnih santimetrov."

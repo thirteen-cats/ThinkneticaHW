@@ -14,7 +14,8 @@ perfect_weight = heigth - 110
 
 if perfect_weight <= 0
     puts "Ваш вес уже оптимальный"
-elsif puts "Hello, #{name}, your perfect weight is #{perfect_weight}"
+elsif 
+    puts "Hello, #{name}, your perfect weight is #{perfect_weight}"
 end
 
 
