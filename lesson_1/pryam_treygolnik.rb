@@ -36,7 +36,7 @@ else
     else 
         side1 ** 2 + side2 **2 == side3 **2
     end
-    puts "Danniy treugolnik yavlyaetsya pryamougolnim."
+    puts "Danniy treugolnik yavlyaetsya pryamougolnim." 
 end
 
 
