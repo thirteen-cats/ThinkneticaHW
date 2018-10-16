@@ -6,7 +6,7 @@ vowels = ["a", "e", "i", "o", "u", "y"]
 hash_vowels = {}
 
 vowels.each do |letter|
-    hash_vowels[letter] = arr.index(letter) + 1
-
+  hash_vowels[letter] = arr.index(letter) + 1
 end
+
 puts hash_vowels

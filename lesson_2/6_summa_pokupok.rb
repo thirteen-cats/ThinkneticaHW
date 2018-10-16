@@ -8,34 +8,30 @@
 # товара. Также вывести итоговую сумму за каждый товар.
 # Вычислить и вывести на экран итоговую сумму всех покупок в "корзине".
 
-
-pokupki = Hash.new
+pokupki = {}
 
 loop do 
-    puts "Vvedite naimenovanie tovara: "
-    name = gets.chomp.to_s.downcase
-        if name == "stop"
-            break
-        else
-        puts "Vvedite stiomost edinitsy tovara: "
-        price = gets.chomp.to_f
-        puts "Vvedite kolichestvo priobretennih tovarov: "
-        qty = gets.chomp.to_f
-        end
+  puts "Enter the name of a purchased item: "
+  name = gets.chomp.to_s.downcase
+    if name == "stop"
+      break
+    else
+      puts "Enter the price of a purchased item: "
+      price = gets.chomp.to_f
+      puts "Enter the quantity of items purchased: "
+      qty = gets.chomp.to_f
+    end
     
-    pokupki[name] = {price => qty}
-
+  pokupki[name] = {price => qty}
 end
 
 puts pokupki
 total = 0.0
 pokupki.each do |name, price_qty|
-    summa = 0.0
-    price_qty.each {|key, value| summa = key * value}
-    total = total + summa 
-puts "Vy kupili #{name} na summu #{summa} rubley."
+  summa = 0.0
+  price_qty.each {|key, value| summa = key * value}
+  total = total + summa 
+puts "You have purchased #{name} at the amount of #{summa} RUR."
 end
-puts "Obshaya stoimost vashih pokupok #{total} rubley."
 
-
-
+puts "Total cost of your purchase is #{total} RUR."
