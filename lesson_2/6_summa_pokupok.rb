@@ -13,14 +13,11 @@ pokupki = {}
 loop do 
   puts "Enter the name of a purchased item: "
   name = gets.chomp.to_s.downcase
-    if name == "stop"
-      break
-    else
-      puts "Enter the price of a purchased item: "
-      price = gets.chomp.to_f
-      puts "Enter the quantity of items purchased: "
-      qty = gets.chomp.to_f
-    end
+  break if name == "stop"
+  puts "Enter the price of a purchased item: "
+  price = gets.chomp.to_f
+  puts "Enter the quantity of items purchased: "
+  qty = gets.chomp.to_f
     
   pokupki[name] = {price => qty}
 end

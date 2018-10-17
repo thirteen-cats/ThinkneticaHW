@@ -22,5 +22,5 @@ end
   
 months = generate_months(2010)
 months.each do |name, days|
-  puts "#{name}" unless days != 30
+  puts "#{name}" if days == 30
 end

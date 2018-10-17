@@ -3,10 +3,9 @@
 arr = [1, 1]
 result = 0
     
-while true 
+while result < 100
   result = arr[-2] + arr[-1]
-  break if result > 100
-  arr.push(result)
+  arr << result
 end
 
 puts arr
